@@ -17,8 +17,10 @@ To build the PoC, first install the required dependencies:
 
 Then, compile the `sender.cpp` and `receiver.cpp` files using `g++`:
 
-```g++ -std=c++11 -o sender sender.cpp -I asio-1.24.0/include -I /usr/include/cryptopp -L /usr/lib/x86_64-linux-gnu -lcryptopp -lpthread
-g++ -std=c++11 -o receiver receiver.cpp -I asio-1.24.0/include -I /usr/include/cryptopp -L /usr/lib/x86_64-linux-gnu -lcryptopp -lpthread```
+```
+g++ -std=c++11 -o sender sender.cpp -I asio-1.24.0/include -I /usr/include/cryptopp -L /usr/lib/x86_64-linux-gnu -lcryptopp -lpthread
+g++ -std=c++11 -o receiver receiver.cpp -I asio-1.24.0/include -I /usr/include/cryptopp -L /usr/lib/x86_64-linux-gnu -lcryptopp -lpthread
+```
 
 To run the PoC, first set the `AES_KEY` environment variable:
 
